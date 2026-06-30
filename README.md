@@ -1,73 +1,76 @@
+
+---
+
 # 🌸 Perfume Store Website
 
-موقع تعريفي لمتجر عطور بتصميم عصري وفاخر لعرض المنتجات والعلامات التجارية بطريقة جذابة واحترافية.
+An informational website for a perfume store designed with a modern and luxurious style to showcase products and brands in an attractive and professional way.
 
 ---
 
-## 📌 نبذة عن المشروع
+## 📌 About the Project
 
-هذا المشروع عبارة عن **موقع تعريفي لمتجر عطور** تم تصميمه وبرمجته لعرض العطور بطريقة أنيقة تعكس هوية المتجر وتوفر تجربة مستخدم سلسة وراقية.
-
----
-
-## 🎯 أهداف الموقع
-
-- التعريف بالمتجر ومنتجاته  
-- عرض العطور بطريقة منظمة وجذابة  
-- إبراز العلامات التجارية الفاخرة  
-- تسهيل تواصل العملاء  
-- تصميم متجاوب مع جميع الأجهزة  
+This project is an **informational perfume store website** designed and developed to display perfumes in an elegant style that reflects the store’s identity and provides a smooth and premium user experience.
 
 ---
 
-## 💻 التقنيات المستخدمة
+## 🎯 Website Goals
 
-- HTML  
-- CSS  
-- JavaScript  
-
----
-
-## 🌸 أقسام المتجر
-
-- عطور رجالية  
-- عطور نسائية  
-- عطور نيش (Niche Perfumes)  
-- عطور شرقية  
-- بخور ومعطرات  
-- عروض وخصومات  
+* Introduce the store and its products
+* Display perfumes in an organized and attractive way
+* Highlight luxury brands
+* Facilitate customer communication
+* Responsive design for all devices
 
 ---
 
-## 🎨 المميزات
+## 💻 Technologies Used
 
-- تصميم فاخر وأنيق مناسب لمتاجر العطور  
-- واجهة مستخدم بسيطة وسهلة الاستخدام  
-- عرض المنتجات بشكل منظم واحترافي  
-- متجاوب مع جميع الأجهزة (Responsive)  
-- أداء سريع وتجربة مستخدم سلسة  
+* HTML
+* CSS
+* JavaScript
 
 ---
 
-## 👨‍💻 البرمجة والتصميم
+## 🌸 Store Sections
 
-**محمد مجيب بشر**
-
----
-
-## 📞 التواصل
-
-- 📱 +967 772062777  
-- 📱 +967 782807337  
+* Men’s Perfumes
+* Women’s Perfumes
+* Niche Perfumes
+* Oriental Perfumes
+* Incense & Air Fresheners
+* Offers & Discounts
 
 ---
 
-## 🚀 طريقة التشغيل
+## 🎨 Features
 
-1. قم بتحميل المشروع  
-2. افتح ملف `index.html`  
-3. استمتع بتصفح الموقع  
+* Luxurious and elegant design suitable for perfume stores
+* Simple and user-friendly interface
+* Organized and professional product display
+* Fully responsive design for all devices
+* Fast performance and smooth user experience
 
 ---
 
-"# Perfume-store" 
+## 👨‍💻 Development & Design
+
+**Mohammed Mujeeb Bishr**
+
+---
+
+## 📞 Contact
+
+* 📱 +967 772062777
+* 📱 +967 782807337
+
+---
+
+## 🚀 How to Run
+
+1. Download the project
+2. Open the `index.html` file
+3. Enjoy browsing the website
+
+---
+
+# "Perfume-store"
