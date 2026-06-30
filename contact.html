@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا - متجر باريس للعطور</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- ملاحظة: تم إبقاء أيقونات FontAwesome كاستثناء لضرورة العرض، ولكن الخطوط الأساسية محلية -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .contact-page-header {
+            padding-top: 150px;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/hero_bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding-bottom: 80px;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 50px;
+            margin-top: -50px;
+            background: white;
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: var(--shadow);
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 25px;
+            background: #f9f6f0;
+            border-radius: 20px;
+            transition: var(--transition);
+            text-decoration: none;
+            color: var(--secondary-color);
+            border: 1px solid transparent;
+        }
+        .contact-method:hover {
+            transform: translateX(-10px);
+            background: var(--white);
+            border-color: var(--primary-color);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+        .contact-method i {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+        }
+        .contact-form {
+            background: var(--white);
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 25px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            outline: none;
+            font-family: 'Tajawal', sans-serif;
+            background: #fcfcfc;
+            transition: var(--transition);
+        }
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: var(--primary-color);
+            background: white;
+            box-shadow: 0 0 0 4px rgba(197, 160, 89, 0.1);
+        }
+        .form-group textarea {
+            height: 180px;
+            resize: none;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 18px;
+            border-radius: 12px;
+        }
+        @media (max-width: 992px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>باريس للعطور</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="products.html">العطور</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+            <div class="cart-icon-container" onclick="window.location.href='cart.html'">
+                <i class="fas fa-shopping-bag"></i>
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="contact-page-header">
+        <h2 class="section-title" style="color: white; margin-bottom: 10px;"><span>تواصل معنا</span>نحن بانتظار سماع صوتك</h2>
+        <p>فريقنا متاح دائماً للإجابة على استفساراتكم وتقديم المشورة العطرية</p>
+    </div>
+
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>قنوات التواصل</h3>
+                <p>اختر الطريقة التي تفضلها للتواصل معنا، وسنكون سعداء بخدمتك.</p>
+                
+                <a href="https://wa.me/966500000000" class="contact-method">
+                    <i class="fab fa-whatsapp" style="color: #25d366;"></i>
+                    <div>
+                        <h4>واتساب المبيعات</h4>
+                        <p>تواصل مباشر وفوري</p>
+                    </div>
+                </a>
+                
+                <a href="mailto:mohammedmojepp4063155@gmail.com" class="contact-method">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>البريد الإلكتروني</h4>
+                        <p>mohammedmojepp4063155@gmail.com</p>
+                    </div>
+                </a>
+                
+                <div class="contact-method">
+                    <i class="fas fa-location-dot"></i>
+                    <div>
+                        <h4>موقعنا</h4>
+                        <p>اليمن، صنعاء - حي الفخامة</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3>أرسل استفسارك</h3>
+                <!-- الرسالة المحسنة 2: إرسال الرسالة بنجاح -->
+                <form id="contact-form" onsubmit="alert('شكراً لثقتك بنا! لقد تم استلام رسالتك بنجاح. سيتواصل معك أحد مستشارينا العطريين في أقرب وقت ممكن.'); return false;">
+                    <div class="form-group">
+                        <label>الاسم الكامل</label>
+                        <input type="text" required placeholder="كيف ناديك؟">
+                    </div>
+                    <div class="form-group">
+                        <label>البريد الإلكتروني</label>
+                        <input type="email" required placeholder="example@mail.com">
+                    </div>
+                    <div class="form-group">
+                        <label>الموضوع</label>
+                        <input type="text" required placeholder="عن ماذا تود الاستفسار؟">
+                    </div>
+                    <div class="form-group">
+                        <label>الرسالة</label>
+                        <textarea required placeholder="اكتب رسالتك هنا بكل حب..."></textarea>
+                    </div>
+                    <button type="submit" class="btn submit-btn">إرسال الرسالة الآن</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>باريس للعطور</h3>
+                <p>وجهتكم الأولى لأفخر العطور العالمية والشرقية التي تحاكي ذوقكم الرفيع وتخلد ذكرياتكم.</p>
+            </div>
+            <div class="footer-section">
+                <h3>روابط سريعة</h3>
+                <ul style="list-style: none;">
+                    <li><a href="index.html" style="color: #ccc; text-decoration: none;">الرئيسية</a></li>
+                    <li><a href="products.html" style="color: #ccc; text-decoration: none;">مجموعتنا العطرية</a></li>
+                    <li><a href="about.html" style="color: #ccc; text-decoration: none;">قصتنا</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>جميع الحقوق محفوظة &copy; متجر باريس للعطور 2026</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر  باريس للعطور</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- إضافة بعض التنسيقات الخاصة بالصفحة الرئيسية مباشرة لضمان سرعة التحميل -->
+    <style>
+        .testimonials {
+            background: linear-gradient(to bottom, #fdfbf7, #f5f0e6);
+            padding: 6rem 0;
+        }
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .testimonial-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 25px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+            border: 1px solid rgba(0,0,0,0.02);
+        }
+        .testimonial-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+        }
+        .testimonial-card img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            margin-bottom: 1.5rem;
+            object-fit: cover;
+            border: 4px solid var(--primary-color);
+            padding: 3px;
+        }
+        .testimonial-card h4 {
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        .testimonial-card p {
+            font-style: italic;
+            color: #666;
+            line-height: 1.8;
+        }
+        .stars {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- القائمة العلوية -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>باريس للعطور</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="products.html">العطور</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+            <div class="cart-icon-container" onclick="window.location.href='cart.html'">
+                <i class="fas fa-shopping-bag fa-lg"></i>
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- قسم الهيرو -->
+    <section class="hero">
+        <h2>عالمٌ من السحر والجاذبية</h2>
+        <p>اكتشف مجموعتنا الفريدة من العطور العالمية والشرقية الفاخرة التي تعبر عن شخصيتك وتدوم طويلاً.</p>
+        <div class="hero-btns">
+            <a href="products.html?category=men" class="btn">عطور رجالية</a>
+            <a href="products.html?category=women" class="btn btn-secondary" style="margin-right: 15px;">عطور نسائية</a>
+        </div>
+    </section>
+
+    <!-- قسم آراء العملاء -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">آراء عملائنا</h2>
+            <div class="testimonial-grid">
+                <!-- رأي 1 -->
+                <div class="testimonial-card">
+                    <img src="assets/images/cast/1.jpg" alt="عميل">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>محمد مجيب</h4>
+                    <p>"تجربة شراء رائعة، العطور أصلية 100% والثبات مذهل. التوصيل كان سريعاً جداً والتغليف في غاية الأناقة."</p>
+                </div>
+                <!-- رأي 2 -->
+                <div class="testimonial-card">
+                    <img src="assets/images/cast/2.jpg" alt="عميلة">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>سارة المنصور</h4>
+                    <p>"أفضل متجر عطور تعاملت معه. عطورهم النسائية مميزة جداً وتشكيلة واسعة ترضي كل الأذواق. شكراً لكم!"</p>
+                </div>
+                <!-- رأي 3 -->
+                <div class="testimonial-card">
+                    <img src="assets/images/cast/3.jpg" alt="عميل">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h4>خالد التميمي</h4>
+                    <p>"أسعار منافسة جداً مقارنة بالسوق، وخدمة العملاء متعاونة للغاية. سأكرر التجربة بكل تأكيد."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>عَبق الفخامة</h3>
+                <p>متجرنا يقدم أفخر أنواع العطور العالمية والشرقية المختارة بعناية لتناسب ذوقكم الرفيع.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>تواصل معنا</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> mohammedmojepp4063155@gmail.com</li>
+                    <li><i class="fas fa-phone"></i> 337 807 782 967+</li>
+                    <li><i class="fas fa-phone"></i> 777 062 772 967+</li>
+                    <li><i class="fas fa-location-dot"></i> اليمن, صنعاء</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>جميع الحقوق محفوظة &copy; 2026 متجر باريس للعطور</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
